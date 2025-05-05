@@ -1,0 +1,72 @@
+<!-- 모든 템플릿이 상속할 기본 틀, 표준 html문서의 구조를 정의함  -->
+{% load static %}
+<!doctype html>
+<html lang="ko">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+    <!-- pybo CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <title>MyDiary~!!</title>
+</head>
+
+
+
+
+
+
+<body>
+<!-- 네비게이션 바 -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'diary:index' %}">Diary</a> <!--dairy앱의 index라는 이름을 가진 url로 이동(즉, 로고를 클릭하면 메인페이지(diary:index)로 이동함)-->
+    
+        <!--모바일용 메뉴 토글 버튼(햄버거 버튼)-->
+        <button class="navbar-toggler" type="button"     
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!--접히는 메뉴-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+            <!--메뉴 리스트(로그인 버튼 포함)-->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
+                <li class="nav-item">
+                    {% if user.is_authenticated %}
+                    <a class="nav_link" href="{% url 'common:logout' %}">{{user.username}}(로그아웃)</a>
+                    {%else%}
+                    <a class="nav-link" href="{% url 'common:login' %}">로그인</a><!--herf="#"은 로그인 url로 연결할 예정-->
+                    {%endif%}
+                </li>
+                <li>
+                    {% if not user.is_authenticated %} 
+                    <a class="nav-link" href="{%url 'common:signup' %}"> 회원가입 </a>
+                    {% endif %}
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- 기본 템플릿 안에 삽입될 내용 Start -->
+{% block content %}
+{% endblock %}
+<!-- 기본 템플릿 안에 삽입될 내용 End -->
+
+<!-- Bootstrap JS -->
+<script src="{% static 'bootstrap.min.js' %}"></script>
+
+<!-- 자바스크립트 Start -->
+{% block script %}
+{% endblock %}
+<!-- 자바스크립트 End -->
+
+</body>
+</html>
