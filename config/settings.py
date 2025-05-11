@@ -135,3 +135,6 @@ LOGIN_REDIRECT_URL='/'
 BASE_DIR = Path(__file__).resolve().parent.parent #/root/CustomDiary
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')#컨테이너 내부의 media폴더( MEDIA_ROOT = '/root/CustomDiary/media')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

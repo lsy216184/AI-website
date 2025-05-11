@@ -15,6 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.urls import path
+from .views import diary_predict
 from . import views
 
 app_name='diary'
@@ -26,4 +27,5 @@ urlpatterns = [
     path('create/', views.diary_create, name='diary_create'),
     path('modify/<int:diary_id>/', views.diary_modify, name='diary_modify'),
     path('delete/<int:diary_id>/', views.diary_delete, name='diary_delete'),
+    path('predict/<int:diary_id>/', diary_predict, name='diary_predict'),
 ]
