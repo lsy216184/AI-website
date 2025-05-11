@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="container my-5">
-    <h1 class="text-center">일기 목록</h1>  <!--화면(본문)에 표시-->
+    <h1 class="text-center">AI 이용내역</h1>  <!--화면(본문)에 표시-->
     <!--검색창-->
     <div class="search">
         <form  action="{% url 'diary:diary_search' %}" method="GET" > <!--action이 없으면 기본적으로 현재 url로 요청이 전송됨-->
@@ -37,12 +37,12 @@
             {% endfor %}
         {% else %}
             <tr>
-                <td colspan="4">일기가 없습니다.</td>
+                <td colspan="4">AI 이용내역이 없습니다.</td>
             </tr>
         {% endif %}
         </tbody>
     </table>
-    <a href="{% url 'diary:diary_create' %}" class="btn btn-primary">일기 쓰기</a>
+    <a href="{% url 'diary:diary_create' %}" class="btn btn-primary">AI 이용하기</a>
 </div>
 {% endblock content %}
 
