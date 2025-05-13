@@ -42,7 +42,7 @@
                 <a href="{% url 'diary:diary_modify' diary.id %}" class="btn btn-sm btn-outline-secondary">수정</a>
                 <a href="javascript:void(0)" class="delete btn btn-sm btn-outline-secondary"
                    data-uri="{% url 'diary:diary_delete' diary.id %}">삭제</a>
-                <a href="{% url 'diary:diary_predict' diary.id %}" class="btn btn-sm btn-outline-primary">YOLO 예측하기</a>
+                <a href="{% url 'diary:image_predict' diary.id %}" class="btn btn-sm btn-outline-primary">YOLO 예측하기</a>
                 {% endif %}
             </div>
 

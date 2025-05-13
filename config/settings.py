@@ -28,6 +28,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['222.109.41.89', '127.0.0.1', 'tndudrha.chickenkiller.com']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://tndudrha.chickenkiller.com'
+]
 
 # Application definition
 
