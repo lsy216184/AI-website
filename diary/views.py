@@ -12,6 +12,9 @@ from ultralytics import YOLO
 from glob import glob
 from django.conf import settings
 
+#모델용 함수 가져오기
+from .vit_classifier import classify_image 
+
 
 # YOLO 모델 로딩(모델이 무거워서 최상단에서 한번만 로드)
 model = YOLO("/root/yolo/weight/yolo11x.pt")
@@ -177,3 +180,28 @@ def image_predict(request, diary_id):
         "MEDIA_URL": settings.MEDIA_URL,
     })
  
+
+
+
+ #이미지 분류
+@login_required(login_url='common:login')
+#모델용 함수(classify_image) 와 뷰 함수(classify_image_view)의 이름이 겹치지 않게 정의!
+def classify_image_view(request, diary_id):  
+    diary = get_object_or_404(Writing, pk=diary_id)
+
+    if request.user != diary.author:
+        messages.error(request, "분류 권한이 없습니다.")
+        return redirect("diary:detail", diary_id=diary.id)
+
+    if not diary.image:
+        messages.error(request, "이미지가 없습니다.")
+        return redirect("diary:detail", diary_id=diary.id)
+
+    # 함수 호출만으로 분류 수행
+    predictions = classify_image(diary.image.path)
+
+    return render(request, 'diary/classify_image_res.html', {
+        'diary': diary,
+        'predictions': predictions,
+        'image_url': diary.image.url
+    })
