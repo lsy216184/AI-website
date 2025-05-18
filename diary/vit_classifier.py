@@ -21,7 +21,7 @@ def classify_image(img_path):
 
     with torch.no_grad():
         output = model(input_tensor)
-        top5_prob, top5_idx = torch.topk(output.softmax(dim=1) * 100, k=5)
+        top5_prob, top5_idx = torch.topk(output.softmax(dim=1) * 100, k=1)
 
     predictions = [
         {

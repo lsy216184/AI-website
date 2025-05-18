@@ -205,3 +205,64 @@ def classify_image_view(request, diary_id):
         'predictions': predictions,
         'image_url': diary.image.url
     })
+
+
+
+
+
+
+# 이미지 세그멘테이션
+@login_required(login_url='common:login')
+def segment_image(request, diary_id):
+    diary = get_object_or_404(Writing, pk=diary_id)
+
+    if request.user != diary.author:
+        messages.error(request, "세그멘테이션 권한이 없습니다.")
+        return redirect("diary:detail", diary_id=diary.id)
+
+    if not diary.image:
+        messages.error(request, "이미지가 없습니다.")
+        return redirect("diary:detail", diary_id=diary.id)
+
+    import torch
+    import torchvision.transforms as T
+    from PIL import Image
+    import matplotlib.pyplot as plt
+
+    # 이미지 로딩 및 전처리
+    img_path = diary.image.path
+    img = Image.open(img_path).convert("RGB")
+    transform = T.Compose([
+        T.Resize(520),
+        T.ToTensor(),
+        T.Normalize(mean=[0.485, 0.456, 0.406],
+                    std=[0.229, 0.224, 0.225]),
+    ])
+    input_tensor = transform(img).unsqueeze(0)
+
+    # 모델 로드
+    model = torch.hub.load('pytorch/vision:v0.10.0', 'deeplabv3_resnet101', pretrained=True)
+    model.eval()
+
+    # 예측
+    with torch.no_grad():
+        output = model(input_tensor)['out'][0]
+    seg = output.argmax(0).cpu().numpy()
+
+    # 저장 경로 설정
+    save_root = os.path.join(settings.MEDIA_ROOT, 'segmentation', request.user.username, str(diary.id))
+    os.makedirs(save_root, exist_ok=True)
+    save_path = os.path.join(save_root, 'mask.png')
+
+    # 마스크 저장
+    plt.imsave(save_path, seg, cmap="jet")
+
+    # 경로를 URL용으로 가공
+    rel_mask_path = save_path.replace(settings.MEDIA_ROOT, "").lstrip("/")
+    image_url = diary.image.url
+
+    return render(request, 'diary/segmentation_result.html', {
+        'diary': diary,
+        'image_url': image_url,
+        'mask_url': os.path.join(settings.MEDIA_URL, rel_mask_path)
+    })

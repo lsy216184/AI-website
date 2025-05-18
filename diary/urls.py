@@ -28,4 +28,5 @@ urlpatterns = [
     path('delete/<int:diary_id>/', views.diary_delete, name='diary_delete'),
     path('predict/<int:diary_id>/', views.image_predict, name='image_predict'),
     path('classify/<int:diary_id>', views.classify_image_view, name='classify_image'),
+    path('segmentation/<int:diary_id>', views.segment_image, name='segment_image'),
 ]
