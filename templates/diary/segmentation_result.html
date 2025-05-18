@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container my-4">
+    <h3> 이미지 영역분할 결과</h3>
+
+    <p><strong>{{ diary.subject }}</strong>에 대한 결과입니다.</p>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h5>원본 이미지</h5>
+            <img src="{{ image_url }}" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <h5>세그멘테이션 마스크</h5>
+            <img src="{{ mask_url }}" class="img-fluid">
+        </div>
+    </div>
+
+    <a href="{% url 'diary:detail' diary.id %}" class="btn btn-secondary mt-4">돌아가기</a>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container my-3">
+    <h3>YOLO 예측 결과</h3>
+
+    <p>제목: {{ diary.subject }}</p>
+
+    <h5>원본 이미지</h5>
+    <img src="{{ MEDIA_URL }}{{ original }}" width="400"/>
+
+    <h5>예측 결과</h5>
+    <img src="{{ MEDIA_URL }}{{ predicted }}" width="400"/>
+
+    <a href="{% url 'diary:detail' diary.id %}" class="btn btn-outline-secondary mt-3">← 돌아가기</a>
+</div>
+{% endblock %}
