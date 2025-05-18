@@ -104,23 +104,23 @@ def diary_delete(request, diary_id):
     if diary.image:
         diary.image.delete(save=False)
 
-    # 2) 예측 결과 폴더 삭제
-    import os, shutil
-    from django.conf import settings
+    
+    # 2)삭제 대상 AI 결과 디렉토리 이름들
+    ai_dirs = ['predicted', 'segmentation', 'classified_img_res']
+    for ai_dir in ai_dirs:
+        target_path = os.path.join(
+            settings.MEDIA_ROOT,
+            ai_dir,
+            request.user.username,
+            str(diary.id)
+        )
+        if os.path.isdir(target_path):
+            shutil.rmtree(target_path)
 
-    pred_dir = os.path.join(
-        settings.MEDIA_ROOT,
-        'predicted',
-        request.user.username,
-        str(diary.id)
-    )
-    if os.path.isdir(pred_dir):
-        shutil.rmtree(pred_dir)
-    
-    
+    # 3) DB에서 diary 삭제
     diary.delete()
-    return redirect('diary:index')
 
+    return redirect('diary:index')
 
 
 #이미지 예측
@@ -249,10 +249,15 @@ def segment_image(request, diary_id):
         output = model(input_tensor)['out'][0]
     seg = output.argmax(0).cpu().numpy()
 
-    # 저장 경로 설정
+     # 저장 경로 설정
     save_root = os.path.join(settings.MEDIA_ROOT, 'segmentation', request.user.username, str(diary.id))
     os.makedirs(save_root, exist_ok=True)
-    save_path = os.path.join(save_root, 'mask.png')
+    
+    # 🔄 원본 파일명 기반으로 마스크 파일 이름 지정
+    original_filename = os.path.basename(img_path)            # 예: birds.jpg
+    name, _ = os.path.splitext(original_filename)             # 예: birds
+    mask_filename = f"{name}_mask.png"                        # 예: birds_mask.png
+    save_path = os.path.join(save_root, mask_filename)
 
     # 마스크 저장
     plt.imsave(save_path, seg, cmap="jet")
