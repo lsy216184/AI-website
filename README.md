@@ -77,10 +77,11 @@ python3 manage.py runserver
 
 
 3. 로그인합니다.
-   ![3  로그인 화면](https://github.com/user-attachments/assets/a59d1154-df69-4eec-8f13-3f8bed4219d8)
+    dfgdfgdfgdfgdfgdfgdfgdfgdfgdfgdfgfd![3  로그인 화면](https://github.com/user-attachments/assets/a59d1154-df69-4eec-8f13-3f8bed4219d8)
+5. ![3  로그인 화면](https://github.com/user-attachments/assets/a59d1154-df69-4eec-8f13-3f8bed4219d8)
 
 
-5. 글 등록하기
+6. 글 등록하기
    •	“AI 이용하기” 버튼을 클릭해서 계시물(제목, 이미지)을 등록합니다.
     ![4  ai이용하기 버튼](https://github.com/user-attachments/assets/00a0b4e5-3604-4a3b-9e66-48dd9d510693)
 
