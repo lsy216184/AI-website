@@ -77,18 +77,15 @@ python3 manage.py runserver
 
 
 3. 로그인합니다.
-
-  ![3  로그인 화면](https://github.com/user-attachments/assets/3d307451-525b-4dc7-b641-438d3491a531)
+   ![3  로그인 화면](https://github.com/user-attachments/assets/a59d1154-df69-4eec-8f13-3f8bed4219d8)
 
 
 4. 글 등록하기
-   
-  •	“AI 이용하기” 버튼을 클릭해서 계시물(제목, 이미지)을 등록합니다.
-  ![4  ai이용하기 버튼](https://github.com/user-attachments/assets/261d0313-6da8-4aaa-84cf-e8bc554373ab)
+   •	“AI 이용하기” 버튼을 클릭해서 계시물(제목, 이미지)을 등록합니다.
+  ![4  ai이용하기 버튼](https://github.com/user-attachments/assets/00a0b4e5-3604-4a3b-9e66-48dd9d510693)
 
 
   •	“파일선택”버튼을 누르면 이미지를 첨부할 수 있습니다. 
-  
   •	“저장하기”버튼을 누르면 게시물이 등록됩니다. 
 
   ![5  글 등록화면](https://github.com/user-attachments/assets/74cce822-28ac-485d-8445-8bab712ba564)
