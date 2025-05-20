@@ -123,6 +123,7 @@ python3 manage.py runserver
 
     ![9 돌아가기 버튼](https://github.com/user-attachments/assets/f53a5180-94c1-4da8-8d1d-844b625a0097)
 
+
     5-2. 이미지 분류하기 및 결과 확인
 
     •	“이미지 분류” 버튼을 눌러 이미지 분류를 실행합니다. 
@@ -131,9 +132,9 @@ python3 manage.py runserver
   
     •	분류결과가 하단에 텍스트로 표기됩니다.
     
-      o	객체 클래스: 객체가 어떤 것으로 인식했는지를 나타냅니다. 
+      -	객체 클래스: 객체가 어떤 것으로 인식했는지를 나타냅니다. 
       
-      o	확률값(%) 의미: 얼마나 정확하게 인식했는지 나타냅니다. 
+      -	확률값(%) 의미: 얼마나 정확하게 인식했는지 나타냅니다. 
       
       ![11 이미지 분류 결과](https://github.com/user-attachments/assets/b1a52a30-9cf2-4e69-acbe-8676bc978b46)
     
@@ -142,7 +143,7 @@ python3 manage.py runserver
       ![13 이미지 분류 후 돌아가기 버튼 클릭](https://github.com/user-attachments/assets/4f905556-b3d2-4ae2-83cc-dc8f74a9b58d)
   
   
-  5-3. 이미지 영역분할하기 및 결과 확인
+    5-3. 이미지 영역분할하기 및 결과 확인
   
     •	“이미지 영역분할” 버튼을 눌러 이미지 영역분할을 실행합니다.  
     
@@ -150,9 +151,9 @@ python3 manage.py runserver
   
     •	분류결과 이미지가 우측에 나타납니다.
     
-      o	객체 클래스 : 이미지의 각 픽셀이 어떤 클래스에 속하는지 표시합니다. 같은 클래스의 객체끼리는 같은 색으로 칠해지며, 보통 객체는 빨강으로 배경은 초록이나 파랑으로 표현됩니다.  
+      - 객체 클래스 : 이미지의 각 픽셀이 어떤 클래스에 속하는지 표시합니다. 같은 클래스의 객체끼리는 같은 색으로 칠해지며, 보통 객체는 빨강으로 배경은 초록이나 파랑으로 표현됩니다.  
       
-          ![14  이미지 영역분할 결과](https://github.com/user-attachments/assets/618b1d53-2e4d-479d-aa85-31d06e1c0011)
+      ![14  이미지 영역분할 결과](https://github.com/user-attachments/assets/618b1d53-2e4d-479d-aa85-31d06e1c0011)
   
     
   6. 글 수정, 삭제하기
