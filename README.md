@@ -78,12 +78,15 @@ python3 manage.py runserver
 
 
 4. 로그인합니다.
+   
     ![3  로그인 화면](https://github.com/user-attachments/assets/a59d1154-df69-4eec-8f13-3f8bed4219d8)
 
 
 
 6. 글 등록하기
+   
    •	“AI 이용하기” 버튼을 클릭해서 계시물(제목, 이미지)을 등록합니다.
+   
     ![4  ai이용하기 버튼](https://github.com/user-attachments/assets/00a0b4e5-3604-4a3b-9e66-48dd9d510693)
 
 
@@ -98,21 +101,23 @@ python3 manage.py runserver
 5-1. 이미지 예측하기 및 결과 확인
   
   •	게시물 목록 화면에서 등록한 계시물을 클릭하여 상세화면으로 이동합니다.
-![6  등록게시글 확인](https://github.com/user-attachments/assets/c67c253f-af62-4e32-924e-a9188afc4858)
+
+  ![6  등록게시글 확인](https://github.com/user-attachments/assets/c67c253f-af62-4e32-924e-a9188afc4858)
 
   •	“이미지 예측” 버튼을 눌러 이미지 예측을 실행합니다. 
-    ![7  이미지 예측 버튼 클릭](https://github.com/user-attachments/assets/5e06b5b6-f550-434c-9a20-bdca6f151ce1)
+
+  ![7  이미지 예측 버튼 클릭](https://github.com/user-attachments/assets/5e06b5b6-f550-434c-9a20-bdca6f151ce1)
 
   •	예측결과 이미지가 하단에 나타납니다.
   
     o	객체 클래스: 객체가 어떤 것으로 인식했는지를 나타냅니다.
-    
     o	바운딩 박스: 사물의 테두리를 표시합니다. 
-    
     o	확률값(%) 의미: 얼마나 정확하게 인식했는지 나타냅니다. 
+    
     ![8  이미지 예측 결과](https://github.com/user-attachments/assets/3121db7b-893a-4350-9b86-f7eafa8544bd)
 
   •	“돌아가기”버튼을 클릭하면 게시물 목록 화면으로 이동가능합니다. 
+  
     ![9 돌아가기 버튼](https://github.com/user-attachments/assets/f53a5180-94c1-4da8-8d1d-844b625a0097)
 
 5-2. 이미지 분류하기 및 결과 확인
@@ -126,26 +131,33 @@ python3 manage.py runserver
     o	객체 클래스: 객체가 어떤 것으로 인식했는지를 나타냅니다. 
     
     o	확률값(%) 의미: 얼마나 정확하게 인식했는지 나타냅니다. 
+    
     ![11 이미지 분류 결과](https://github.com/user-attachments/assets/b1a52a30-9cf2-4e69-acbe-8676bc978b46)
   
   •	“돌아가기”버튼을 클릭하면 게시물 목록 화면으로 이동가능합니다. 
+  
     ![13 이미지 분류 후 돌아가기 버튼 클릭](https://github.com/user-attachments/assets/4f905556-b3d2-4ae2-83cc-dc8f74a9b58d)
 
 
 5-3. 이미지 영역분할하기 및 결과 확인
 
   •	“이미지 영역분할” 버튼을 눌러 이미지 영역분할을 실행합니다.  
+  
   ![13  이미지 영역분할 클릭](https://github.com/user-attachments/assets/12794002-d3f9-48d5-8d24-c8d37f7564db)
 
   •	분류결과 이미지가 우측에 나타납니다.
   
     o	객체 클래스 : 이미지의 각 픽셀이 어떤 클래스에 속하는지 표시합니다. 같은 클래스의 객체끼리는 같은 색으로 칠해지며, 보통 객체는 빨강으로 배경은 초록이나 파랑으로 표현됩니다.  
+    
       ![14  이미지 영역분할 결과](https://github.com/user-attachments/assets/618b1d53-2e4d-479d-aa85-31d06e1c0011)
 
   
 6. 글 수정, 삭제하기
-  •	“수정” 버튼을 클릭하면 게시물 수정이 가능합니다. 
+   
+  •	“수정” 버튼을 클릭하면 게시물 수정이 가능합니다.
+
   •	“삭제” 버튼을 클릭하면 게시물 삭제가 가능합니다.
+  
 ![15  수정 삭제 버튼](https://github.com/user-attachments/assets/f4b5ec96-c5cf-44c6-b5c9-b9360478b2f3)
 
 >>>>>>> develop
