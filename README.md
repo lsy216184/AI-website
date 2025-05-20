@@ -72,11 +72,12 @@ python3 manage.py runserver
 1. 웹브라우저에서 'http://127.0.0.1:8000/ai_object_detection/' 접속
 
 2. 회원가입을 통해 계정을 생성합니다.
+   
    ![1 회원가입 화면](https://github.com/user-attachments/assets/bfc5f5ad-c38f-4f78-9788-900d7ea75a6f)
    ![2 계정생성](https://github.com/user-attachments/assets/27780c0a-ddca-41f7-a1d1-446ff5004b8e)
 
 
-3. 로그인합니다.
+4. 로그인합니다.
     ![3  로그인 화면](https://github.com/user-attachments/assets/a59d1154-df69-4eec-8f13-3f8bed4219d8)
 
 
