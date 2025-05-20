@@ -77,6 +77,7 @@ python3 manage.py runserver
 
 
 4. 로그인합니다.
+   
   ![3  로그인 화면](https://github.com/user-attachments/assets/3d307451-525b-4dc7-b641-438d3491a531)
 
 
