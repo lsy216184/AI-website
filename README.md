@@ -55,7 +55,7 @@ pip install django
 
 ## 5. 프로젝트 클론
 ```bash
-git clone https://github.com/lsy216184/CustomDiary.git
+git clone https://github.com/lsy216184/AI-website.git
 ```
 
 ## 6. 서버 실행
@@ -65,7 +65,7 @@ python3 manage.py runserver
 ```
 
 ## 7. 사용 방법
-1. 웹브라우저에서 'http://127.0.0.1:8000/ai_object_detection/' 접속
+1. 웹브라우저에서 'http://127.0.0.1:8000/' 접속
 
 2. 회원가입을 통해 계정을 생성합니다.
    
