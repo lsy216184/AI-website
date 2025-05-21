@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# CustomDiary
-=======
-
 # imageAI
 
 ### 프로젝트 소개
@@ -167,4 +163,3 @@ python3 manage.py runserver
     
     ![15  수정 삭제 버튼](https://github.com/user-attachments/assets/f4b5ec96-c5cf-44c6-b5c9-b9360478b2f3)
 
->>>>>>> develop
