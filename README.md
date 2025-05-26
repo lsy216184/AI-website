@@ -141,6 +141,9 @@ python3 manage.py runserver
     
 
 
+
+
+
     5-2. 이미지 분류하기 및 결과 확인
 
     •	“이미지 분류” 버튼을 눌러 이미지 분류를 실행합니다.
@@ -162,12 +165,15 @@ python3 manage.py runserver
       
   
 
+
+
+
      
     5-3. 이미지 영역분할하기 및 결과 확인
   
     •	“이미지 영역분할” 버튼을 눌러 이미지 영역분할을 실행합니다.  
     
-   ![903 이미지 영역분할](https://github.com/user-attachments/assets/04513d26-9922-4e50-97cb-085467ddd9e4)
+      ![903 이미지 영역분할](https://github.com/user-attachments/assets/04513d26-9922-4e50-97cb-085467ddd9e4)
 
   
     •	분류결과 이미지가 우측에 나타납니다.
@@ -185,6 +191,6 @@ python3 manage.py runserver
   
     •	“삭제” 버튼을 클릭하면 게시물 삭제가 가능합니다.
     
-    ![905 이미지 수정,삭제](https://github.com/user-attachments/assets/9294c113-7134-42ca-9432-195817b911ba)
+      ![905 이미지 수정,삭제](https://github.com/user-attachments/assets/9294c113-7134-42ca-9432-195817b911ba)
 
 
