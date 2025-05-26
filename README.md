@@ -74,12 +74,13 @@ python3 manage.py runserver
 
 
 3. 회원가입을 통해 계정을 생성합니다.
+   
    ![883 회원가입](https://github.com/user-attachments/assets/60d2de37-c7ed-4f3c-be21-e49681ca7ffe)
    ![884 계정생성](https://github.com/user-attachments/assets/30b4b7dc-739d-468e-906b-bf85a6bb71b2)
 
 
 
-4. 로그인합니다.
+5. 로그인합니다.
    
 ![885 로그인](https://github.com/user-attachments/assets/50d4833d-c3bd-46dd-8bed-6b5c165d4cf3)
 
