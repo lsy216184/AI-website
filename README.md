@@ -65,47 +65,58 @@ python3 manage.py runserver
 ```
 
 ## 7. 사용 방법
+
 1. 웹브라우저에서 'http://127.0.0.1:8000/' 접속
+   •	페이지의 ‘고급’을 클릭합니다.
+   •	‘222.109.41.89(안전하지 않음)’을 클릭합니다.
+![881비공개 연결이 아님](https://github.com/user-attachments/assets/d53c4b5a-e199-40b6-a274-bdf5b59dbfa6)
+![882 비공개 안전하지 않음](https://github.com/user-attachments/assets/ef089e26-7e5c-4489-9a36-88976514dd74)
 
-2. 회원가입을 통해 계정을 생성합니다.
+
+3. 회원가입을 통해 계정을 생성합니다.
+   ![883 회원가입](https://github.com/user-attachments/assets/60d2de37-c7ed-4f3c-be21-e49681ca7ffe)
+   ![884 계정생성](https://github.com/user-attachments/assets/30b4b7dc-739d-468e-906b-bf85a6bb71b2)
+
+
+
+4. 로그인합니다.
    
-   ![1 회원가입 화면](https://github.com/user-attachments/assets/bfc5f5ad-c38f-4f78-9788-900d7ea75a6f)
-   ![2 계정생성](https://github.com/user-attachments/assets/27780c0a-ddca-41f7-a1d1-446ff5004b8e)
-
-
-3. 로그인합니다.
-   
-    ![3  로그인 화면](https://github.com/user-attachments/assets/a59d1154-df69-4eec-8f13-3f8bed4219d8)
+![885 로그인](https://github.com/user-attachments/assets/50d4833d-c3bd-46dd-8bed-6b5c165d4cf3)
 
 
 
-4. 글 등록하기
+
+5. 글 등록하기
    
    •	“AI 이용하기” 버튼을 클릭해서 계시물(제목, 이미지)을 등록합니다.
    
-    ![4  ai이용하기 버튼](https://github.com/user-attachments/assets/00a0b4e5-3604-4a3b-9e66-48dd9d510693)
+   ![886 글등록](https://github.com/user-attachments/assets/04246923-8c29-4615-83e8-bec371dfc0cf)
+
 
 
    •	“파일선택”버튼을 누르면 이미지를 첨부할 수 있습니다. 
   
    •	“저장하기”버튼을 누르면 게시물이 등록됩니다.
 
-   ![5  글 등록화면](https://github.com/user-attachments/assets/74cce822-28ac-485d-8445-8bab712ba564)
+   ![887 제목, 이미지 등록](https://github.com/user-attachments/assets/d5708c58-8f74-4972-b637-df676a25c43a)
 
 
 
-5. 이미지에 AI적용하기(예측, 분류, 영역분할)
+
+6. 이미지에 AI적용하기(예측, 분류, 영역분할)
 
     5_1.이미지 예측하기 및 결과 확인
   
     •	게시물 목록 화면에서 등록한 계시물을 클릭하여 상세화면으로 이동합니다.
 
-    ![6  등록게시글 확인](https://github.com/user-attachments/assets/c67c253f-af62-4e32-924e-a9188afc4858)
+    ![888 등록게시물 확인](https://github.com/user-attachments/assets/d1f90574-915b-4165-a588-e71fd233f7c1)
+
 
 
     •	“이미지 예측” 버튼을 눌러 이미지 예측을 실행합니다. 
 
-    ![7  이미지 예측 버튼 클릭](https://github.com/user-attachments/assets/5e06b5b6-f550-434c-9a20-bdca6f151ce1)
+    ![889 예측버튼 클릭](https://github.com/user-attachments/assets/0e92524e-2007-4f97-89ef-f562d5f54d9b)
+
 
 
     •	예측결과 이미지가 하단에 나타납니다.
@@ -113,19 +124,21 @@ python3 manage.py runserver
       - 바운딩 박스: 사물의 테두리를 표시합니다. 
       - 확률값(%) 의미: 얼마나 정확하게 인식했는지 나타냅니다. 
   
-    ![8  이미지 예측 결과](https://github.com/user-attachments/assets/3121db7b-893a-4350-9b86-f7eafa8544bd)
+    ![900 이미지예측결과](https://github.com/user-attachments/assets/345b55da-3053-4761-8222-416265249d70)
+
 
     •	“돌아가기”버튼을 클릭하면 게시물 목록 화면으로 이동가능합니다. 
 
-    ![9 돌아가기 버튼](https://github.com/user-attachments/assets/f53a5180-94c1-4da8-8d1d-844b625a0097)
+    
+
 
     
       
     5-2. 이미지 분류하기 및 결과 확인
 
     •	“이미지 분류” 버튼을 눌러 이미지 분류를 실행합니다. 
-  
-      ![10 이미지 분류 버튼](https://github.com/user-attachments/assets/bf1ebd82-2303-4a20-8748-031061748712)
+  ![901 이미지 부뉴 버튼 클릭](https://github.com/user-attachments/assets/7aab20e9-487a-4bf5-b100-9cf3c69eb1c3)
+
   
     •	분류결과가 하단에 텍스트로 표기됩니다.
     
@@ -133,11 +146,12 @@ python3 manage.py runserver
       
       -	확률값(%) 의미: 얼마나 정확하게 인식했는지 나타냅니다. 
       
-      ![11 이미지 분류 결과](https://github.com/user-attachments/assets/b1a52a30-9cf2-4e69-acbe-8676bc978b46)
+      ![902 이미지 분류 결과](https://github.com/user-attachments/assets/edb0f78e-dd1c-428e-a508-1d0ca01c458e)
+
     
     •	“돌아가기”버튼을 클릭하면 게시물 목록 화면으로 이동가능합니다. 
     
-      ![13 이미지 분류 후 돌아가기 버튼 클릭](https://github.com/user-attachments/assets/4f905556-b3d2-4ae2-83cc-dc8f74a9b58d)
+      
   
 
      
@@ -145,21 +159,24 @@ python3 manage.py runserver
   
     •	“이미지 영역분할” 버튼을 눌러 이미지 영역분할을 실행합니다.  
     
-    ![13  이미지 영역분할 클릭](https://github.com/user-attachments/assets/12794002-d3f9-48d5-8d24-c8d37f7564db)
+   ![903 이미지 영역분할](https://github.com/user-attachments/assets/04513d26-9922-4e50-97cb-085467ddd9e4)
+
   
     •	분류결과 이미지가 우측에 나타납니다.
     
       - 객체 클래스 : 이미지의 각 픽셀이 어떤 클래스에 속하는지 표시합니다. 같은 클래스의 객체끼리는 같은 색으로 칠해지며, 보통 객체는 빨강으로 배경은 초록이나 파랑으로 표현됩니다.  
+      ![904 이미지 영역분할 결과](https://github.com/user-attachments/assets/b20e42dd-0456-4df5-86fa-c3270ce72af2)
+
       
-      ![14  이미지 영역분할 결과](https://github.com/user-attachments/assets/618b1d53-2e4d-479d-aa85-31d06e1c0011)
 
     
     
-6. 글 수정, 삭제하기
+7. 글 수정, 삭제하기
      
     •	“수정” 버튼을 클릭하면 게시물 수정이 가능합니다.
   
     •	“삭제” 버튼을 클릭하면 게시물 삭제가 가능합니다.
     
-    ![15  수정 삭제 버튼](https://github.com/user-attachments/assets/f4b5ec96-c5cf-44c6-b5c9-b9360478b2f3)
+    ![905 이미지 수정,삭제](https://github.com/user-attachments/assets/9294c113-7134-42ca-9432-195817b911ba)
+
 
