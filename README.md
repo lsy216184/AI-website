@@ -73,21 +73,24 @@ python3 manage.py runserver
 ![882 비공개 안전하지 않음](https://github.com/user-attachments/assets/ef089e26-7e5c-4489-9a36-88976514dd74)
 
 
-3. 회원가입을 통해 계정을 생성합니다.
+
+2. 회원가입을 통해 계정을 생성합니다.
    
    ![883 회원가입](https://github.com/user-attachments/assets/60d2de37-c7ed-4f3c-be21-e49681ca7ffe)
    ![884 계정생성](https://github.com/user-attachments/assets/30b4b7dc-739d-468e-906b-bf85a6bb71b2)
 
 
 
-5. 로그인합니다.
+
+3. 로그인합니다.
    
-![885 로그인](https://github.com/user-attachments/assets/50d4833d-c3bd-46dd-8bed-6b5c165d4cf3)
+   ![885 로그인](https://github.com/user-attachments/assets/50d4833d-c3bd-46dd-8bed-6b5c165d4cf3)
 
 
 
 
-5. 글 등록하기
+
+4. 글 등록하기
    
    •	“AI 이용하기” 버튼을 클릭해서 계시물(제목, 이미지)을 등록합니다.
    
@@ -100,6 +103,8 @@ python3 manage.py runserver
    •	“저장하기”버튼을 누르면 게시물이 등록됩니다.
 
    ![887 제목, 이미지 등록](https://github.com/user-attachments/assets/d5708c58-8f74-4972-b637-df676a25c43a)
+
+
 
 
 
@@ -134,11 +139,13 @@ python3 manage.py runserver
 
 
     
-      
+
+
     5-2. 이미지 분류하기 및 결과 확인
 
-    •	“이미지 분류” 버튼을 눌러 이미지 분류를 실행합니다. 
-  ![901 이미지 부뉴 버튼 클릭](https://github.com/user-attachments/assets/7aab20e9-487a-4bf5-b100-9cf3c69eb1c3)
+    •	“이미지 분류” 버튼을 눌러 이미지 분류를 실행합니다.
+   
+     ![901 이미지 부뉴 버튼 클릭](https://github.com/user-attachments/assets/7aab20e9-487a-4bf5-b100-9cf3c69eb1c3)
 
   
     •	분류결과가 하단에 텍스트로 표기됩니다.
@@ -172,7 +179,7 @@ python3 manage.py runserver
 
     
     
-7. 글 수정, 삭제하기
+6. 글 수정, 삭제하기
      
     •	“수정” 버튼을 클릭하면 게시물 수정이 가능합니다.
   
