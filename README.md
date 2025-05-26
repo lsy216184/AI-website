@@ -113,15 +113,15 @@ python3 manage.py runserver
 
     [ 5_1.이미지 예측하기 및 결과 확인 ]
   
-    •	게시물 목록 화면에서 등록한 계시물을 클릭하여 상세화면으로 이동합니다.
+      •	게시물 목록 화면에서 등록한 계시물을 클릭하여 상세화면으로 이동합니다.
 
-    ![888 등록게시물 확인](https://github.com/user-attachments/assets/d1f90574-915b-4165-a588-e71fd233f7c1)
+      ![888 등록게시물 확인](https://github.com/user-attachments/assets/d1f90574-915b-4165-a588-e71fd233f7c1)
 
 
 
-    •	“이미지 예측” 버튼을 눌러 이미지 예측을 실행합니다. 
+      •	“이미지 예측” 버튼을 눌러 이미지 예측을 실행합니다. 
 
-    ![889 예측버튼 클릭](https://github.com/user-attachments/assets/0e92524e-2007-4f97-89ef-f562d5f54d9b)
+      ![889 예측버튼 클릭](https://github.com/user-attachments/assets/0e92524e-2007-4f97-89ef-f562d5f54d9b)
 
 
 
